@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGIsoft Tech - Professional IT Solutions</title>
+    <link rel="stylesheet" href="styles_new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#home" class="logo">
+                <img src="logo.png" alt="MGIsoft Tech logo" class="logo-img">
+                <span>MGIsoft Tech</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#why-choose" class="nav-link">Why Choose Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Professional IT Solutions for Modern Businesses</h1>
+            <p class="hero-subtitle">MGIsoft Tech delivers reliable PC repair, maintenance, networking, and digital solutions tailored to your needs.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Contact Us</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })">Explore Services</button>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="tech-grid"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About MGIsoft Tech</h2>
+                    <p class="section-subtitle">Your Trusted Technology Partner</p>
+                    <p>MGIsoft Tech is a leading IT solutions company dedicated to providing comprehensive technology services for businesses and individuals. With years of experience in the industry, we specialize in computer repair, system maintenance, networking solutions, and professional IT support.</p>
+                    <p>Our team of certified technicians is committed to delivering fast, reliable, and affordable solutions that keep your systems running smoothly. Whether you need emergency repairs, routine maintenance, or complex networking installations, MGIsoft Tech is your trusted partner.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert Technicians</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Support Available</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quick Response Time</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Technology Excellence</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive IT Solutions</p>
+            
+            <div class="services-grid">
+                <!-- PC Repair Service -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>PC Repair</h3>
+                    <p>Fast and reliable diagnosis and repair of hardware and software issues. We fix everything from motherboard failures to system crashes.</p>
+                    <div class="card-footer">
+                        <a href="#contact" onclick="event.preventDefault(); scrollToContact()">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- System Maintenance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>System Maintenance</h3>
+                    <p>Regular maintenance to keep your systems running at peak performance. We handle updates, cleanups, and preventive care.</p>
+                    <div class="card-footer">
+                        <a href="#contact" onclick="event.preventDefault(); scrollToContact()">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Computer Assembly -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Computer Assembly</h3>
+                    <p>Professional custom PC building and assembly services. We create systems tailored to your specific performance and budget requirements.</p>
+                    <div class="card-footer">
+                        <a href="#contact" onclick="event.preventDefault(); scrollToContact()">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Networking Installation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Networking Solutions</h3>
+                    <p>Setup and configuration of secure, efficient network infrastructure. We design solutions that scale with your business.</p>
+                    <div class="card-footer">
+                        <a href="#contact" onclick="event.preventDefault(); scrollToContact()">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Software Installation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Software Installation</h3>
+                    <p>Expert installation and configuration of business and productivity software with full system optimization and support.</p>
+                    <div class="card-footer">
+                        <a href="#contact" onclick="event.preventDefault(); scrollToContact()">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom website development with modern design principles and responsive functionality for optimal user experience.</p>
+                    <div class="card-footer">
+                        <a href="#contact" onclick="event.preventDefault(); scrollToContact()">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- IT Consultancy -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>IT Consultancy</h3>
+                    <p>Strategic technology consulting to optimize your IT infrastructure and align it with your business goals.</p>
+                    <div class="card-footer">
+                        <a href="#contact" onclick="event.preventDefault(); scrollToContact()">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Technical Support -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>Comprehensive on-site and remote technical support services available 24/7 for all your IT emergencies and questions.</p>
+                    <div class="card-footer">
+                        <a href="#contact" onclick="event.preventDefault(); scrollToContact()">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose MGIsoft Tech</h2>
+            <p class="section-subtitle">Excellence in Every Service</p>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Professional Team</h3>
+                    <p>Our certified technicians have years of industry experience and are committed to providing excellence in every project.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Response</h3>
+                    <p>We understand that downtime is costly. Our team responds quickly to emergencies with efficient solutions.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Quality IT services shouldn't break the bank. We offer competitive pricing without compromising on quality.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Reliable Solutions</h3>
+                    <p>Our proven track record of successful projects and satisfied clients speaks to our commitment to reliability.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Customer Satisfaction</h3>
+                    <p>Your satisfaction is our priority. We work closely with clients to exceed their expectations on every project.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Modern Technology</h3>
+                    <p>We stay updated with the latest technology trends to provide cutting-edge solutions for your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We're Ready to Help</p>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input" required>
+                                <option value="">Select Service</option>
+                                <option value="pc-repair">PC Repair</option>
+                                <option value="maintenance">System Maintenance</option>
+                                <option value="assembly">Computer Assembly</option>
+                                <option value="networking">Networking Solutions</option>
+                                <option value="software">Software Installation</option>
+                                <option value="web">Web Development</option>
+                                <option value="consultancy">IT Consultancy</option>
+                                <option value="support">Technical Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>FAAN Qtrs Maiduguri<br>Borno State, Nigeria</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/2348134553380" target="_blank" rel="noreferrer noopener">+2348134553380</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:Miliyasugarba@gmail.com">Miliyasugarba@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Maiduguri, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MGIsoft Tech</h4>
+                    <p>Your trusted partner for professional IT solutions and technical support services.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">PC Repair</a></li>
+                        <li><a href="#services">System Maintenance</a></li>
+                        <li><a href="#services">Networking</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> <a href="https://wa.me/2348134553380" target="_blank" rel="noreferrer noopener">+2348134553380</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:Miliyasugarba@gmail.com">Miliyasugarba@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> FAAN Qtrs Maiduguri, Nigeria</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MGIsoft Tech. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> by MGIsoft Tech</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script_new.js"></script>
+</body>
+</html>
